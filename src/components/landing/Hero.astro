@@ -75,25 +75,84 @@
         />
       </div>
     </div>
-    <div class="grid grid-cols-2 gap-0.5 lg:mt-8 md:grid-cols-6 mt-6">
-      <div class="flex justify-center col-span- ">
-        <img alt="logo" class="h-8" src="public/support/sup.png" />
-      </div>
-      <div class="flex justify-center col-span-1 ">
-        <img alt="logo" class="h-8" src="public/support/girasol.jpeg" />
-      </div>
-      <div class="flex justify-center col-span-1 ">
-        <img alt="logo" class="h-8" src="public/support/cofide.jpeg" />
-      </div>
-      <div class="flex justify-center col-span-1 ">
-        <img alt="logo" class="h-8" src="public/support/factmype.png" />
-      </div>
-      <div class="flex justify-center col-span-1 ">
-        <img alt="logo" class="h-8" src="public/support/INSAGA.jpeg" />
-      </div>
-       <div class="flex justify-center col-span-1 ">
-        <img alt="logo" class="h-12" src="public/support/LOGO-INCUVAL-1.png" />
+
+
+    <div class="relative h-20 mt-6 lg:mt-8 overflow-hidden mx-auto max-w-7xl">
+      <!-- Carrusel -->
+      <div class="flex items-center animate-scroll space-x-12">
+        <!-- Duplicado de las imágenes para un efecto continuo -->
+        <div class="flex items-center space-x-12">
+          <div class="logo-container">
+            <img alt="logo" class="h-12 object-contain" src="/support/sup.png" />
+          </div>
+          <div class="logo-container">
+            <img alt="logo" class="h-12 object-contain" src="/support/girasol.jpeg" />
+          </div>
+          <div class="logo-container">
+            <img alt="logo" class="h-12 object-contain" src="/support/cofide.jpeg" />
+          </div>
+          <div class="logo-container">
+            <img alt="logo" class="h-12 object-contain" src="/support/factmype.png" />
+          </div>
+          <div class="logo-container">
+            <img alt="logo" class="h-12 object-contain" src="/support/INSAGA.jpeg" />
+          </div>
+          <div class="logo-container">
+            <img alt="logo" class="h-12 object-contain" src="/support/LOGO-INCUVAL-1.png" />
+          </div>
+        </div>
+        <!-- Duplicado para el efecto de desplazamiento continuo -->
+        <div class="flex items-center space-x-12">
+          <div class="logo-container">
+            <img alt="logo" class="h-12 object-contain" src="/support/sup.png" />
+          </div>
+          <div class="logo-container">
+            <img alt="logo" class="h-12 object-contain" src="/support/girasol.jpeg" />
+          </div>
+          <div class="logo-container">
+            <img alt="logo" class="h-12 object-contain" src="/support/cofide.jpeg" />
+          </div>
+          <div class="logo-container">
+            <img alt="logo" class="h-12 object-contain" src="/support/factmype.png" />
+          </div>
+          <div class="logo-container">
+            <img alt="logo" class="h-12 object-contain" src="/support/INSAGA.jpeg" />
+          </div>
+          <div class="logo-container">
+            <img alt="logo" class="h-12 object-contain" src="/support/LOGO-INCUVAL-1.png" />
+          </div>
+        </div>
       </div>
     </div>
-  </div>
+    
+    <style>
+      /* Ajuste para animación suave y efecto continuo */
+      .animate-scroll {
+        display: flex;
+        gap: 3rem; /* Espaciado entre imágenes */
+        animation: scroll 40s linear infinite;
+      }
+    
+      .logo-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-width: 150px; /* Tamaño mínimo para uniformidad */
+      }
+    
+      /* Animación suave de desplazamiento */
+      @keyframes scroll {
+        0% {
+          transform: translateX(0);
+        }
+        100% {
+          transform: translateX(-100%);
+        }
+      }
+    
+      /* Pausar animación al pasar el ratón por encima */
+      .animate-scroll:hover {
+        animation-play-state: paused;
+      }
+    </style>
 </section>  
