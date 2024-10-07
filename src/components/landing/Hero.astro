@@ -1,23 +1,10 @@
 <section>
-  <div
-    class="mx-auto w-full lg:px-24 max-w-7xl md:px-12 items-center px-8 py-24">
+  <div class="mx-auto w-full lg:px-24 max-w-7xl md:px-12 items-center px-8 py-24">
     <div class="text-center max-w-4xl mx-auto">
       <div class="sm:flex sm:justify-center">
-       <!-- <div -->
-       <!--  class="relative rounded-full py-1 px-3 text-sm leading-6 text-gray-600 ring-1 ring-gray-900/10 hover:ring-gray-900/20"> -->
-          <!-- <a
-            href="https://lexingtonthemes.com/free-templates/"
-            class="font-semibold text-accent-600"
-            ><span class="absolute inset-0" aria-hidden="true"></span>
-            <span class="block lg:inline"> -->
-        <!--      More free & Premium templates <span aria-hidden="true"  -->
-           <!--      >&rarr;</span -->
-           <!--      -->
-            </span>
-          </a>
-        </div>
+        <!-- Sección de enlace opcional -->
       </div>
-      <div class="text-center mt-8"> <!-- Alinea el texto al centro -->
+      <div class="text-center mt-8">
         <h1 class="text-4xl tracking-tight font-semibold text-black md:text-5xl font-display">
           Constituye tu SACS de manera fácil y rápida, sin notarios.
         </h1>
@@ -25,21 +12,8 @@
           100% digital usando certificados digitales
         </p>
       </div>
-      
     </div>
-  <!--  <div class="flex justify-center gap-3 mt-10 flex-col sm:flex-row">
-      <a
-        class="items-center justify-center border-gray-200 h-10 font-medium rounded-lg focus-visible:outline-black focus:outline-none inline-flex duration-200 text-black lg:w-auto px-6 py-3 text-center text-black/80 w-full border"
-        href="https://github.com/michael-andreuzza/astrosaas">GitHub</a
-      >
-        -->
-    <!--  <a
-        class="items-center justify-center h-10 font-medium rounded-lg focus-visible:outline-black focus:outline-none inline-flex bg-black border-2 border-black duration-200 focus-visible:ring-black hover:bg-transparent hover:border-black hover:text-black lg:w-auto px-6 py-3 text-center text-white w-full"
-        href="https://lexingtonthemes.com"
-        >Lexington Themes &nbsp; &rarr;
-      </a>
-      -->
-    </div>
+
     <dl class="lg:gap-x-8 lg:grid-cols-3 max-w-4xl mt-8 mx-auto sm:gap-x-6 sm:gap-y-12 sm:grid sm:grid-cols-2 sm:space-y-0 space-y-6 text-center items-start">
       <div class="text-gray-500">
         <strong class="text-gray-700 text-lg">Constitución de Empresas SACS</strong>
@@ -63,8 +37,6 @@
         </p>
       </div>
     </dl>
-    
-    
 
     <div class="relative w-full mx-auto max-w-7xl items-center py-12 pb-12">
       <div class="bg-gray-100 p-8 rounded-3xl">
@@ -75,25 +47,76 @@
         />
       </div>
     </div>
-    <div class="grid grid-cols-2 gap-0.5 lg:mt-8 md:grid-cols-6 mt-6">
-      <div class="flex justify-center col-span-1 ">
-        <img alt="logo" class="h-8" src="public/support/sup.png" />
+
+    <div class="flex overflow-hidden space-x-8">
+      <div class="logo-container animate-marquee1">
+        <img alt="logo" class="h-12 object-contain" src="public/support/sup.png" />
       </div>
-      <div class="flex justify-center col-span-1 ">
-        <img alt="logo" class="h-8" src="public/support/girasol.jpeg" />
+      <div class="logo-container animate-marquee2">
+        <img alt="logo" class="h-12 object-contain" src="public/support/girasol.jpeg" />
       </div>
-      <div class="flex justify-center col-span-1 ">
-        <img alt="logo" class="h-8" src="public/support/cofide.jpeg" />
+      <div class="logo-container animate-marquee3">
+        <img alt="logo" class="h-12 object-contain" src="public/support/cofide.jpeg" />
       </div>
-      <div class="flex justify-center col-span-1 ">
-        <img alt="logo" class="h-8" src="public/support/factmype.png" />
+      <div class="logo-container animate-marquee4">
+        <img alt="logo" class="h-12 object-contain" src="public/support/factmype.png" />
       </div>
-      <div class="flex justify-center col-span-1 ">
-        <img alt="logo" class="h-8" src="public/support/INSAGA.jpeg" />
+      <div class="logo-container animate-marquee5">
+        <img alt="logo" class="h-12 object-contain" src="public/support/INSAGA.jpeg" />
       </div>
-       <div class="flex justify-center col-span-1 ">
-        <img alt="logo" class="h-12" src="public/support/LOGO-INCUVAL-1.png" />
+      <div class="logo-container animate-marquee6">
+        <img alt="logo" class="h-12 object-contain" src="public/support/LOGO-INCUVAL-1.png" />
       </div>
     </div>
   </div>
-</section>  
+
+  <style>
+    .flex {
+      position: relative;
+      width: 100%;
+      overflow: hidden;
+    }
+
+    .logo-container {
+      position: relative;
+      display: inline-block;
+      animation-duration: 10s;
+      animation-timing-function: linear;
+      animation-iteration-count: infinite;
+    }
+
+    @keyframes move-left {
+      0% {
+        transform: translateX(100%);
+      }
+      100% {
+        transform: translateX(-100%);
+      }
+    }
+
+    .animate-marquee1 {
+      animation-name: move-left;
+    }
+    .animate-marquee2 {
+      animation-name: move-left;
+      animation-delay: 1s; /* Delay para que se muevan en diferentes tiempos */
+    }
+    .animate-marquee3 {
+      animation-name: move-left;
+      animation-delay: 2s;
+    }
+    .animate-marquee4 {
+      animation-name: move-left;
+      animation-delay: 3s;
+    }
+    .animate-marquee5 {
+      animation-name: move-left;
+      animation-delay: 4s;
+    }
+    .animate-marquee6 {
+      animation-name: move-left;
+      animation-delay: 5s;
+    }
+  </style>
+</section>
+
