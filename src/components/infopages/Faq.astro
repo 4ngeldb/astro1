@@ -1,169 +1,108 @@
 <section>
-  <div
-    class="mx-auto w-full lg:px-24 max-w-7xl md:px-12 items-center px-8 py-24 scroll-mt-12"
-  >
+  <div class="mx-auto w-full lg:px-24 max-w-7xl md:px-12 items-center px-8 py-24 scroll-mt-12">
     <div class="grid grid-cols-1 lg:grid-cols-3 gap-6 lg:gap-12">
       <div class="text-center lg:text-left">
         <div>
-          <p
-            class="text-3xl font-normal tracking-tight text-black font-display"
-          >
-          Preguntas Frecuentes
+          <p class="text-3xl font-normal tracking-tight text-black font-display">
+            Preguntas Frecuentes
           </p>
           <p class="text-base mt-4 text-black">
-            Respuestas a preguntas frecuentes sobre nosotros.
+            Encuentra las respuestas a las dudas más comunes sobre nuestra plataforma y servicios.
           </p>
         </div>
       </div>
-      <div
-        x-data="{
-  activeAccordion: '',
-  setActiveAccordion(id) {
-  this.activeAccordion = (this.activeAccordion == id) ? '' : id
-  }
-  }"
-        class="relative w-full mx-auto font-normal lg:col-span-2"
-      >
-        <div
-          x-data="{ id: $id('accordion') }"
-          :class="{ 'text-black': activeAccordion==id, 'text-zinc-600 hover:text-accent-500': activeAccordion!=id }"
-          class="cursor-pointer group text-black"
-        >
-          <button
-            @click="setActiveAccordion(id)"
-            class="flex items-center justify-between w-full p-4 pb-1 text-left font-medium select-none"
-          >
-            <span>¿Porqué NO interviene una notaría?</span>
-            <svg
-              class="w-5 h-5 duration-300 ease-out text-accent-500 -rotate-[45deg]"
-              :class="{ '-rotate-[45deg]': activeAccordion==id }"
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke-width="1.5"
-              stroke="currentColor"
-              ><path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                d="M12 6v12m6-6H6"></path></svg
-            >
+      
+      <!-- Contenedor de Acordeones -->
+      <div x-data="{ activeAccordion: '', setActiveAccordion(id) { this.activeAccordion = (this.activeAccordion == id) ? '' : id } }" class="relative w-full mx-auto font-normal lg:col-span-2">
+        <!-- Pregunta 1 -->
+        <div x-data="{ id: $id('accordion') }" :class="{ 'text-black': activeAccordion==id, 'text-zinc-600 hover:text-accent-500': activeAccordion!=id }" class="cursor-pointer group text-black">
+          <button @click="setActiveAccordion(id)" class="flex items-center justify-between w-full p-4 pb-1 text-left font-medium select-none">
+            <span>¿Por qué no interviene una notaría?</span>
+            <svg class="w-5 h-5 duration-300 ease-out text-accent-500 -rotate-[45deg]" :class="{ '-rotate-[45deg]': activeAccordion==id }" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v12m6-6H6"></path>
+            </svg>
           </button>
           <div x-show="activeAccordion==id" x-collapse="">
             <div class="p-4 pt-2 text-black">
-              La constitución de una SACS en Perú <strong>se realiza de manera digital a través del Sistema de Intermediación Digital (SID-Sunarp),</strong> eliminando la necesidad de una notaría. Este proceso es 100% en línea y solo requiere un documento privado digital, lo que reduce costos y tiempos, facilitando la formalización de empresas para emprendedores.
+              Gracias al <strong>Decreto Legislativo Nº 1409</strong>, se creó la Sociedad por Acciones Cerrada Simplificada (SACS), que permite formalizar empresas sin la intervención de una notaría. La <strong>Sunarp</strong> implementó formatos digitales para este proceso, lo que facilita la constitución utilizando certificados digitales.
             </div>
           </div>
         </div>
-        <div
-          x-data="{ id: $id('accordion') }"
-          :class="{ 'text-black': activeAccordion==id, 'text-zinc-600 hover:text-accent-500': activeAccordion!=id }"
-          class="cursor-pointer group text-zinc-600 hover:text-accent-500"
-        >
-          <button
-            @click="setActiveAccordion(id)"
-            class="flex items-center justify-between w-full p-4 pb-1 text-left font-medium select-none"
-          >
-            <span
-              >¿EL partner o cliente debe pagar por el certificado digital?</span
-            >
-            <svg
-              class="w-5 h-5 duration-300 ease-out text-accent-500"
-              :class="{ '-rotate-[45deg]': activeAccordion==id }"
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke-width="1.5"
-              stroke="currentColor"
-              ><path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                d="M12 6v12m6-6H6"></path></svg
-            >
+        
+        <!-- Pregunta 2 -->
+        <div x-data="{ id: $id('accordion') }" :class="{ 'text-black': activeAccordion==id, 'text-zinc-600 hover:text-accent-500': activeAccordion!=id }" class="cursor-pointer group text-zinc-600 hover:text-accent-500">
+          <button @click="setActiveAccordion(id)" class="flex items-center justify-between w-full p-4 pb-1 text-left font-medium select-none">
+            <span>¿Cómo es el costo para constituir una empresa?</span>
+            <svg class="w-5 h-5 duration-300 ease-out text-accent-500" :class="{ '-rotate-[45deg]': activeAccordion==id }" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v12m6-6H6"></path>
+            </svg>
           </button>
-          <div
-            x-show="activeAccordion==id"
-            x-collapse=""
-            style="display: none;"
-          >
+          <div x-show="activeAccordion==id" x-collapse="">
             <div class="p-4 pt-2 text-black">
-              Los <strong>certificados digitales que usarán los socios para firmar el acto constitutivo</strong> tienen un costo reducido y debe ser pagado por el partner a <strong>sacsmype.pe.</strong>
+              El precio básico para la constitución es <strong>S/. 354</strong>, aplicable si el capital no supera los S/. 5,000 y se cuenta con un máximo de 2 socios y un solo gerente. Para situaciones que excedan estos parámetros, el costo se ajustará según las necesidades específicas del cliente.
             </div>
           </div>
         </div>
-        <div
-          x-data="{ id: $id('accordion') }"
-          :class="{ 'text-black': activeAccordion==id, 'text-zinc-600 hover:text-accent-500': activeAccordion!=id }"
-          class="cursor-pointer group text-zinc-600 hover:text-accent-500"
-        >
-          <button
-            @click="setActiveAccordion(id)"
-            class="flex items-center justify-between w-full p-4 pb-1 text-left font-medium select-none"
-          >
-            <span
-              >¿Puedo ser partner desde cualquier parte del Perú?</span
-            >
-            <svg
-              class="w-5 h-5 duration-300 ease-out text-accent-500"
-              :class="{ '-rotate-[45deg]': activeAccordion==id }"
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke-width="1.5"
-              stroke="currentColor"
-              ><path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                d="M12 6v12m6-6H6"></path></svg
-            >
+        
+        <!-- Pregunta 3 -->
+        <div x-data="{ id: $id('accordion') }" :class="{ 'text-black': activeAccordion==id, 'text-zinc-600 hover:text-accent-500': activeAccordion!=id }" class="cursor-pointer group text-zinc-600 hover:text-accent-500">
+          <button @click="setActiveAccordion(id)" class="flex items-center justify-between w-full p-4 pb-1 text-left font-medium select-none">
+            <span>¿Cuándo se debe pagar el costo total?</span>
+            <svg class="w-5 h-5 duration-300 ease-out text-accent-500" :class="{ '-rotate-[45deg]': activeAccordion==id }" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v12m6-6H6"></path>
+            </svg>
           </button>
-          <div
-            x-show="activeAccordion==id"
-            x-collapse=""
-            style="display: none;"
-          >
+          <div x-show="activeAccordion==id" x-collapse="">
             <div class="p-4 pt-2 text-black">
-              Sí, puedes ser partner desde cualquier parte del Perú. No importa tu ubicación, ya que el proceso es completamente en línea, lo que permite que personas de cualquier región del país puedan participar y aprovechar las oportunidades sin restricciones geográficas.
-
+              Para iniciar el proceso, requerimos un adelanto de <strong>S/. 54</strong>. El resto se cancela antes de la firma digital de los documentos. Puedes realizar el pago en línea o a nuestra cuenta en el BCP.
             </div>
           </div>
         </div>
-        <div
-          x-data="{ id: $id('accordion') }"
-          :class="{ 'text-black': activeAccordion==id, 'text-zinc-600 hover:text-accent-500': activeAccordion!=id }"
-          class="cursor-pointer group text-zinc-600 hover:text-accent-500"
-        >
-          <button
-            @click="setActiveAccordion(id)"
-            class="flex items-center justify-between w-full p-4 pb-1 text-left font-medium select-none"
-          >
-            <span
-              >¿SACSMYPE.PE puede quedarse con mis clientes?</span
-            >
-            <svg
-              class="w-5 h-5 duration-300 ease-out text-accent-500"
-              :class="{ '-rotate-[45deg]': activeAccordion==id }"
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke-width="1.5"
-              stroke="currentColor"
-              ><path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                d="M12 6v12m6-6H6"></path></svg
-            >
+        
+        <!-- Pregunta 4 -->
+        <div x-data="{ id: $id('accordion') }" :class="{ 'text-black': activeAccordion==id, 'text-zinc-600 hover:text-accent-500': activeAccordion!=id }" class="cursor-pointer group text-zinc-600 hover:text-accent-500">
+          <button @click="setActiveAccordion(id)" class="flex items-center justify-between w-full p-4 pb-1 text-left font-medium select-none">
+            <span>¿Cuáles son los requisitos para los socios?</span>
+            <svg class="w-5 h-5 duration-300 ease-out text-accent-500" :class="{ '-rotate-[45deg]': activeAccordion==id }" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v12m6-6H6"></path>
+            </svg>
           </button>
-          <div
-            x-show="activeAccordion==id"
-            x-collapse=""
-            style="display: none;"
-          >
+          <div x-show="activeAccordion==id" x-collapse="">
             <div class="p-4 pt-2 text-black">
-              Como empresa SACS, mantienes la propiedad y el control sobre tus clientes. SACSMYPE está diseñada para apoyar la gestión y el crecimiento de tu negocio, sin interferir en la relación directa que tienes con tus clientes.
+              Los socios deben contar con <strong>DNI vigente</strong> y no tener multas electorales en la JNE. Además, los esposos casados civilmente no pueden ser socios debido a la sociedad conyugal, aunque hay algunas excepciones.
             </div>
           </div>
         </div>
-       
+        
+        <!-- Pregunta 5 -->
+        <div x-data="{ id: $id('accordion') }" :class="{ 'text-black': activeAccordion==id, 'text-zinc-600 hover:text-accent-500': activeAccordion!=id }" class="cursor-pointer group text-zinc-600 hover:text-accent-500">
+          <button @click="setActiveAccordion(id)" class="flex items-center justify-between w-full p-4 pb-1 text-left font-medium select-none">
+            <span>¿Qué se puede aportar en bienes no dinerarios?</span>
+            <svg class="w-5 h-5 duration-300 ease-out text-accent-500" :class="{ '-rotate-[45deg]': activeAccordion==id }" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v12m6-6H6"></path>
+            </svg>
+          </button>
+          <div x-show="activeAccordion==id" x-collapse="">
+            <div class="p-4 pt-2 text-black">
+              Puedes aportar bienes como mercadería, equipos (computadoras, máquinas), muebles, etc. No se pueden incluir vehículos, terrenos o propiedades. No es necesario presentar facturas, solo un detalle de los bienes, como marca, modelo, y serie.
+            </div>
+          </div>
+        </div>
+        
+        <!-- Pregunta 6 -->
+        <div x-data="{ id: $id('accordion') }" :class="{ 'text-black': activeAccordion==id, 'text-zinc-600 hover:text-accent-500': activeAccordion!=id }" class="cursor-pointer group text-zinc-600 hover:text-accent-500">
+          <button @click="setActiveAccordion(id)" class="flex items-center justify-between w-full p-4 pb-1 text-left font-medium select-none">
+            <span>¿Cómo se realiza el aporte en efectivo?</span>
+            <svg class="w-5 h-5 duration-300 ease-out text-accent-500" :class="{ '-rotate-[45deg]': activeAccordion==id }" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v12m6-6H6"></path>
+            </svg>
+          </button>
+          <div x-show="activeAccordion==id" x-collapse="">
+            <div class="p-4 pt-2 text-black">
+              Si decides hacer el depósito del aporte en efectivo, te asistiremos durante el proceso. La apertura de la cuenta corriente se realiza en cualquier banco de tu preferencia.
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </div>
