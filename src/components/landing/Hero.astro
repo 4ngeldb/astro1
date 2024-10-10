@@ -1,13 +1,46 @@
 <section>
   <!-- Imagen principal -->
   <div class="relative w-full mx-auto max-w-7xl items-center py-12 pb-12">
-    <div class="bg-gray-100 p-8 rounded-3xl">
+ 
+
+    
+<section class="bg-gray-100 p-8 rounded-3xl">
+  <div class="relative">
+    <div class="overflow-hidden">
       <img
         alt="Descripción de la imagen"
         class="relative w-full border border-gray-200 lg:rounded-2xl object-cover rounded shadow-2xl"
-        src="public/SacsMype-inicio.jpeg"
+        src="/public/SacsMype-inicio.jpeg"
       />
     </div>
+    <a
+      href="https://app.sacsmype.org.pe/login"
+      target="_blank"
+      class="absolute bottom-5 left-1/2 transform -translate-x-1/2 bg-[#17a398] text-white px-6 py-2 rounded-lg hover:bg-[#14897f]"
+    >
+      Comenzar Ahora
+    </a>
+  </div>
+</section>
+    
+    <script>
+      let intervalId;
+    
+      function startCarousel() {
+        // Aquí puedes agregar la lógica para comenzar un carrusel, si es necesario
+        console.log('Carrusel iniciado');
+      }
+    
+      // Mover la imagen al pasar el mouse (opcional)
+      document.querySelector('.relative').addEventListener('mouseenter', () => {
+        clearInterval(intervalId); // Detener el carrusel si lo estás utilizando
+      });
+    
+      document.querySelector('.relative').addEventListener('mouseleave', () => {
+        startCarousel(); // Reiniciar el carrusel si lo estás utilizando
+      });
+    </script>
+
   </div>
 
   <!-- Sección principal de texto y características -->
