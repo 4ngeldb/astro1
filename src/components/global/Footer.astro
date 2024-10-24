@@ -1,75 +1,188 @@
 <footer>
-  <div class="mx-auto w-full lg:px-24 max-w-7xl md:px-12 items-center px-8 py-24">
+  <div
+    class="mx-auto w-full lg:px-24 max-w-7xl md:px-12 items-center px-8 py-24">
     <div class="grid grid-cols-2 lg:grid-cols-4 items-start gap-x-8 gap-y-24">
-      <!-- Logo -->
-      <a href="/" class="xl:col-span-1 text-black inline-flex items-center gap-3">
-        <svg class="h-4" viewBox="0 0 78 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path d="M55.5 0H77.5L58.5 32H36.5L55.5 0Z" class="ccustom" fill="#283CFF"></path>
-          <path d="M35.5 0H51.5L32.5 32H16.5L35.5 0Z" class="ccompli1" fill="#5263FF"></path>
-          <path d="M19.5 0H31.5L12.5 32H0.5L19.5 0Z" class="ccompli2" fill="#808CFF"></path>
+      <a
+        href="/"
+        class="xl:col-span-1 text-black inline-flex items-center gap-3">
+        <svg
+          class="h-4"
+          viewBox="0 0 78 32"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M55.5 0H77.5L58.5 32H36.5L55.5 0Z"
+            class="ccustom"
+            fill="#283CFF"
+          ></path>
+          <path
+            d="M35.5 0H51.5L32.5 32H16.5L35.5 0Z"
+            class="ccompli1"
+            fill="#5263FF"
+          ></path>
+          <path
+            d="M19.5 0H31.5L12.5 32H0.5L19.5 0Z"
+            class="ccompli2"
+            fill="#808CFF"
+          ></path>
         </svg>
-        <span class="font-bold font-display" style="
-          font-size: 20px; 
-          color: #0e368d; 
-          background: linear-gradient(45deg, #192a77, #00d2ff); 
-          -webkit-background-clip: text;
-          -webkit-text-fill-color: transparent; 
-          text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2); 
-          letter-spacing: 0.3px; 
-          padding: 10px;">
-          SacsMype
-        </span>
-      </a>
 
-      <!-- Accesos directos -->
-      <div class="md:grid md:grid-cols-2 xl:grid-cols-4 md:gap-8 text-sm text-gray-400 lg:col-span-3">
+        <span class="font-bold font-display" style="
+        font-size: 20px; /* Tamaño más grande para el logo */
+        color: #0e368d; /* Color principal del logo */
+        background: linear-gradient(45deg, #192a77, #00d2ff); /* Gradiente de colores */
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent; /* Hace que solo el gradiente sea visible */
+        text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2); /* Sombra para resaltar el texto */
+        letter-spacing: 0.3px; /* Espaciado entre letras */
+        padding: 10px;
+      ">SacsMype</span> 
+       
+      </a>
+      
+       
+      <div
+        class="md:grid md:grid-cols-2 xl:grid-cols-4 md:gap-8 text-sm text-gray-400 lg:col-span-3">
         <div>
-          <h3 class="text-lg text-black font-medium tracking-tight">Accesos directos</h3>
-          <ul role="list" class="mt-4 space-y-1">
-            <li><a href="/" class="hover:text-black">Inicio</a></li>
-            <li><a href="/faq" class="hover:text-black">Preguntas frecuentes</a></li>
-            <li><a href="/requisitos" class="hover:text-black">Requisitos</a></li>
-            <li><a href="/privacy" class="hover:text-black">Términos y Condiciones</a></li>
+          <h3 class="text-lg text-black font-medium tracking-tight">
+            Accesos directos
+          </h3>
+          <ul
+            role="list"
+            class="mt-4 space-y-1">
             <li>
-              <a href="https://sign.girasol.pe/reclamaciones" target="_blank" rel="noopener noreferrer" class="hover:text-black">Libro de reclamaciones</a>
+              <a
+                href="/"
+                class="hover:text-black">
+              Inicio
+              </a>
             </li>
-            <li><a href="/signup" class="hover:text-black">Registrarse</a></li>
+            <li>
+              <a
+                href="/faq"
+                class="hover:text-black">
+                Preguntas frecuentes
+              </a>
+            </li>
+            <li>
+              <a
+                href="/#requisitos"
+                class="hover:text-black">
+                Requisitos
+              </a>
+            </li>
+            <li>
+              <a
+                href="/privacy"
+                class="hover:text-black">
+                Términos y Condiciones
+              </a>
+            </li>
+            <li>
+              <a
+              href="https://sign.girasol.pe/reclamaciones" target="_blank" rel="noopener noreferrer"
+              class="hover:text-black">
+               Libro de reclamaciones   
+              </a>
+            </li>
+            <li>
+              <a
+                href="/signup"
+                class="hover:text-black">
+              <!--  Registrarse --> 
+              </a>
+            </li>
           </ul>
         </div>
 
-        <!-- Redes sociales -->
+       
+      
         <div class="mt-12 md:mt-0">
           <h3 class="text-lg text-black font-medium tracking-tight">Redes sociales</h3>
           <ul role="list" class="mt-4 space-y-1">
+            <!-- Facebook -->
             <li>
               <a href="https://www.facebook.com/SacsMype/?_rdr" target="_blank" class="hover:text-black flex items-center">
-                <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 mr-2" viewBox="0 0 24 24" fill="currentColor">
-                  <path d="M22.676 0h-21.352c-.732 0-1.324.592-1.324 1.324v21.352c0 .732.592 1.324 1.324 1.324h11.5v-9.294h-3.119v-3.622h3.119v-2.671c0-3.097 1.892-4.787 4.657-4.787 1.324 0 2.462.099 2.794.143v3.24l-1.918.001c-1.504 0-1.794.714-1.794 1.762v2.312h3.587l-.467 3.622h-3.12v9.293h6.119c.732 0 1.324-.592 1.324-1.324v-21.352c0-.732-.592-1.324-1.324-1.324z"/>
-                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 mr-2" viewBox="0 0 24 24" fill="currentColor"><path d="M22.676 0h-21.352c-.732 0-1.324.592-1.324 1.324v21.352c0 .732.592 1.324 1.324 1.324h11.5v-9.294h-3.119v-3.622h3.119v-2.671c0-3.097 1.892-4.787 4.657-4.787 1.324 0 2.462.099 2.794.143v3.24l-1.918.001c-1.504 0-1.794.714-1.794 1.762v2.312h3.587l-.467 3.622h-3.12v9.293h6.119c.732 0 1.324-.592 1.324-1.324v-21.352c0-.732-.592-1.324-1.324-1.324z"/></svg>
                 Facebook
               </a>
             </li>
-            <!-- Instagram (descomentado si es necesario) -->
-            <!-- <li>
+            
+          
+            <!-- Instagram 
+            <li>
               <a href="https://www.instagram.com/TuPerfilDeInstagram" target="_blank" class="hover:text-black flex items-center">
                 <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 mr-2" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 1.366.062 2.633.332 3.608 1.308.976.975 1.246 2.243 1.308 3.608.058 1.267.07 1.647.07 4.851s-.012 3.584-.07 4.85c-.062 1.366-.332 2.633-1.308 3.608-.975.976-2.243 1.246-3.608 1.308-1.267.058-1.647.07-4.85.07s-3.584-.012-4.85-.07c-1.366-.062-2.633-.332-3.608-1.308-.976-.975-1.246-2.243-1.308-3.608-.058-1.267-.07-1.647-.07-4.85s.012-3.584.07-4.851c.062-1.366.332-2.633 1.308-3.608.975-.976 2.243-1.246 3.608-1.308 1.267-.058 1.647-.07 4.85-.07zm0-2.163c-3.259 0-3.667.014-4.947.072-1.709.074-2.877.344-3.861 1.329-.984.984-1.254 2.152-1.329 3.861-.057 1.28-.071 1.688-.071 4.947s.014 3.667.071 4.947c.075 1.709.344 2.877 1.329 3.861.984.984 2.152 1.254 3.861 1.329 1.28.057 1.688.071 4.947.071s3.667-.014 4.947-.071c1.709-.075 2.877-.344 3.861-1.329.984-.984 1.254-2.152 1.329-3.861.057-1.28.071-1.688.071-4.947s-.014-3.667-.071-4.947c-.075-1.709-.344-2.877-1.329-3.861-.984-.984-2.152-1.254-3.861-1.329-1.28-.057-1.688-.071-4.947-.071zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.162 6.162 6.162 6.162-2.759 6.162-6.162-2.759-6.162-6.162-6.162zm0 10.162c-2.211 0-4-1.789-4-4s1.789-4 4-4 4 1.789 4 4-1.789 4-4 4zm6.406-11.845c-.796 0-1.444.648-1.444 1.444 0 .796.648 1.444 1.444 1.444s1.444-.648 1.444-1.444c0-.796-.648-1.444-1.444-1.444z"/></svg>
                 Instagram
               </a>
             </li> -->
-            <!-- YouTube (descomentado si es necesario) -->
-            <!-- <li>
-              <a href="https://www.youtube.com/TuCanalDeYouTube" target="_blank" class="hover:text-black flex items-center">
-                <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 mr-2" viewBox="0 0 24 24" fill="currentColor"><path d="M10 15l7-3.5-7-3.5v7zm12-6.095c-.227-1.613-1.191-2.948-2.761-3.506C17.657 4.5 12 4.5 12 4.5s-5.657 0-7.239.905C2.191 6.957 1.227 8.292 1 10.095-.113 12.43.132 15.5 2 17.5c1.506 1.592 4.004 2 9.1 2 5.097 0 7.593-.408 9.1-2 1.868-1.867 2.111-3.911 2-5.905z"/></svg>
+            
+             
+            <li>
+              <a href="https://www.youtube.com/@firmeasy_legal" target="_blank" class="hover:text-black flex items-center">
+                <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 mr-2" viewBox="0 0 24 24" fill="currentColor"><path d="M23.498 6.186c-.27-1.008-1.061-1.8-2.069-2.07-1.829-.492-9.165-.492-9.165-.492s-7.337 0-9.165.492c-1.008.27-1.799 1.062-2.069 2.07-.492 1.829-.492 5.651-.492 5.651s0 3.822.492 5.651c.27 1.008 1.061 1.8 2.069 2.07 1.829.492 9.165.492 9.165.492s7.337 0 9.165-.492c1.008-.27 1.799-1.062 2.069-2.07.492-1.829.492-5.651.492-5.651s0-3.822-.492-5.651zm-13.674 8.11v-6.591l5.857 3.296-5.857 3.295z"/></svg>
                 YouTube
               </a>
-            </li> -->
+            
           </ul>
         </div>
+        <div class="mt-12 md:mt-0">
+          <h3 class="text-lg text-black font-medium tracking-tight">Mas productos</h3>
+          <ul role="list" class="mt-4 space-y-1">
+            <!-- Facebook -->
+            <li>
+              <a
+                href="https://girasol.pe/"
+                target="_blank"
+                class="hover:text-black">
+                Certificado Digital: <span style="color: #283747;">Girasol</span>
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://firmeasy.legal/"
+                target="_blank"
+                class="hover:text-black">
+                Firma Digital: <span style="color: #283747;">Firmeasy</span>
+              </a>
+            </li>
+            
+            
       </div>
+      <div class="mt-12 md:mt-0">
+        <h3 class="text-lg text-black font-medium tracking-tight">Nosotros</h3>
+        <ul role="list" class="mt-4 space-y-1">
+          <!-- Facebook -->
+          <li>
+            <a
+                class="hover:text-black">
+                <span style="color: #283747;">RUC: 20605042512</span>
+              </a>
+          </li>
+          <li>
+            <a
+                class="hover:text-black">
+                SacsMype es una plataforma digital que facilita el acceso a certificados y servicios legales, ofreciendo soluciones seguras y eficientes para gestionar trámites de manera confiable. 
+              </a>
+          </li> 
+          <li>
+            <a
+              href="https://wa.me/51935289770?text=Hola,%20quisiera%20saber%20más%20de%20SacsMype"
+              target="_blank"
+              class="hover:text-black">
+              <span style="color: #283747;">(+51) 935 289 770</span>
+            </a>
+          </li>
+        </div>
     </div>
-
-    <div class="mt-16 border-t border-gray-200 pt-8">
-      <p class="text-center text-sm text-gray-400">© 2024 SacsMype. Todos los derechos reservados.</p>
+  </div>  
+</footer>
+<footer class="bg-white">
+  <div class="mx-auto w-full lg:px-24 max-w-7xl md:px-12 items-center px-8 py-6">
+    <div class="border-t pt-6 border-gray-200">
+      <p class="text-sm text-neutral-600 lg:col-span-2">
+        <br />Copyright © 2024. SacsMype.
+      </p>
     </div>
   </div>
 </footer>
