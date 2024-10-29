@@ -1,13 +1,46 @@
 <section>
   <!-- Imagen principal -->
   <div class="relative w-full mx-auto max-w-7xl items-center py-12 pb-12">
-    <div class="bg-gray-100 p-8 rounded-3xl">
+ 
+
+    
+<section class="bg-gray-100 p-8 rounded-3xl">
+  <div class="relative">
+    <div class="overflow-hidden">
       <img
         alt="Descripción de la imagen"
         class="relative w-full border border-gray-200 lg:rounded-2xl object-cover rounded shadow-2xl"
-        src="public/SacsMype-inicio.jpeg"
+        src="/public/SacsMype-inicio.jpeg"
       />
     </div>
+    <a
+      href="https://app.sacsmype.org.pe/login"
+      target="_blank"
+      class="absolute bottom-5 left-1/2 transform -translate-x-1/2 bg-[#17a398] text-white px-6 py-2 rounded-lg hover:bg-[#14897f]"
+    >
+      Comenzar Ahora
+    </a>
+  </div>
+</section>
+    
+    <script>
+      let intervalId;
+    
+      function startCarousel() {
+        // Aquí puedes agregar la lógica para comenzar un carrusel, si es necesario
+        console.log('Carrusel iniciado');
+      }
+    
+      // Mover la imagen al pasar el mouse (opcional)
+      document.querySelector('.relative').addEventListener('mouseenter', () => {
+        clearInterval(intervalId); // Detener el carrusel si lo estás utilizando
+      });
+    
+      document.querySelector('.relative').addEventListener('mouseleave', () => {
+        startCarousel(); // Reiniciar el carrusel si lo estás utilizando
+      });
+    </script>
+
   </div>
 
   <!-- Sección principal de texto y características -->
@@ -15,7 +48,7 @@
     <!-- Texto principal -->
     <div class="text-center max-w-4xl mx-auto">
       <h1 class="text-4xl tracking-tight font-semibold text-black md:text-5xl font-display">
-        Constituye tu SACS de manera fácil y rápida, sin notarios.
+        Constituye tu Empresa SACS de manera fácil y rápida, sin notarios.
       </h1>
       <p class="text-gray-500 lg:text-xl max-w-2xl mt-4 mx-auto text-base">
         100% digital usando certificados digitales
@@ -50,14 +83,20 @@
     </dl>
   </div>
 </section>
-<section class="py-12">
+<div class="text-center max-w-4xl mx-auto">
+  <p class="text-[#17a398] lg:text-xl max-w-2xl mt-4 mx-auto text-base">
+      PRECIO
+  </p>
+  <h2 class="text-3xl tracking-tight font-semibold text-black md:text-4xl font-display">
+    TODO INCLUÍDO
+  </h2>
+<section class="py-20">
   <div class="mx-auto w-full max-w-4xl bg-white border border-gray-200 rounded-2xl p-8 shadow-md">
     <!-- Sección de Precio -->
     <div class="text-center mb-8">
       <p class="text-sm font-semibold" style="color: #17a398;">DESDE</p>
-      <div class="text-2xl font-medium text-gray-500 line-through">450.00</div>
-      <div class="text-4xl font-bold text-black my-2">S/. 354.00</div>
-      <p class="font-semibold" style="color: #17a398;">Por inicios de Año Nuevo 2024</p>
+      <div class="text-2xl font-medium text-[#17a398] line-through">90.00</div>
+      <div class="text-4xl font-bold text-black my-2">S/. 40.00</div>                   
       <p class="text-gray-500 text-sm mt-1">No incluye gastos registrales</p>
     </div>
 
@@ -69,33 +108,33 @@
       </li>
       <li class="flex items-start">
         <span style="color: #17a398;" class="mr-2">✔</span>
+        <p>Certificado Digital de Persona Natural con valides de 1 año </p>
+      </li>
+      <li class="flex items-start">
+        <span style="color: #17a398;" class="mr-2">✔</span>
+        <p>Podras constituir empresas SACS y firmar todos tus contratos o documentos de manera digital con total validez legal.</p>
+      </li>
+      <li class="flex items-start">
+        <span style="color: #17a398;" class="mr-2">✔</span>
         <p>Soporte por personas con experiencia.</p>
       </li>
       <li class="flex items-start">
         <span style="color: #17a398;" class="mr-2">✔</span>
-        <p>Recibirás certificados digitales para ti y tus socios. Alianza estratégica con <a href="#" class="font-semibold" style="color: #17a398;">Firmeasy.legal</a> (Entidad de Registro Acreditada por Indecopi).</p>
+        <p>Recibirás certificados digitales de persona natural por S/40 cada uno. Alianza estratégica con <a href="https://firmeasy.legal/" class="font-semibold" style="color: #17a398;">Firmeasy.legal</a> (Entidad de Registro Acreditada por Indecopi).</p>
+      </li> 
+      <li class="flex items-start">
+        <span style="color: #17a398;" class="mr-2">✔</span>
+        <p>Incluye <strong>1 mes gratis</strong> de contabilidad con <a href="" target="_blank" class="font-semibold" style="color: #17a398;">ASISCONT</a>.</p>
       </li>
       <li class="flex items-start">
         <span style="color: #17a398;" class="mr-2">✔</span>
-        <p>Gastos de abogado y Reserva de Nombre (SUNARP).</p>
-      </li>
-      <li class="flex items-start">
-        <span style="color: #17a398;" class="mr-2">✔</span>
-        <p>Acompañamiento en todo el proceso de constitución (incluyendo el paso de firma digital).</p>
-      </li>
-      <li class="flex items-start">
-        <span style="color: #17a398;" class="mr-2">✔</span>
-        <p><strong>2 meses GRATIS</strong> y <strong>50% Descuento</strong> en software de facturación electrónica con <a href="#" class="font-semibold" style="color: #17a398;">FACTMYPE</a>.</p>
-      </li>
-      <li class="flex items-start">
-        <span style="color: #17a398;" class="mr-2">✔</span>
-        <p>Incluye <strong>1 mes gratis</strong> de contabilidad con <a href="#" class="font-semibold" style="color: #17a398;">ASISCONT</a>.</p>
+        <p>Además, 1 mes gratis y 50% de descuento en software de facturación electrónica con <a href="https://andape.pe/" target="_blank" class="font-semibold" style="color: #17a398;">ANDA.PE</a>.</p>
       </li>
     </ul>
 
     <!-- Botón de Acción -->
     <div class="text-center">
-      <a href="#" class="bg-[#17a398] hover:bg-[#14897f] text-white font-semibold py-3 px-6 rounded-lg">
+      <a href="https://app.sacsmype.org.pe/registro" target="_blank" class="bg-[#17a398] hover:bg-[#14897f] text-white font-semibold py-3 px-6 rounded-lg">
         COMENZAR AHORA
       </a>
     </div>
@@ -104,8 +143,8 @@
 
 
 <!-- Footer con los logos -->
-<footer class="bg-gray-100 py-8 mt-16">
-  <div class="relative h-20 mt-6 lg:mt-8 overflow-hidden mx-auto max-w-7xl">
+<footer class="bg-gray-0 py-8 mt-16">
+  <div class="relative h-20 mt-6 lg:mt-8 overflow-hidden mx-auto max-w-8xl">
     <div class="flex items-center animate-scroll space-x-12">
       <!-- Primer grupo de logos -->
       <div class="flex items-center space-x-12">
@@ -126,6 +165,9 @@
         </div>
         <div class="logo-container">
           <img alt="logo" class="h-12 object-contain" src="/support/LOGO-INCUVAL-1.png" />
+        </div>
+        <div class="logo-container">
+          <img alt="logo" class="h-12 object-contain" src="/support/asiscont-logo.png" />
         </div>
       </div>
 
@@ -149,6 +191,10 @@
         <div class="logo-container">
           <img alt="logo" class="h-12 object-contain" src="/support/LOGO-INCUVAL-1.png" />
         </div>
+        <div class="logo-container">
+          <img alt="logo" class="h-12 object-contain" src="/support/asiscont-logo.png" />
+        </div>
+        
       </div>
     </div>
   </div>
@@ -159,15 +205,15 @@
   /* Animación de desplazamiento suave para el carrusel */
   .animate-scroll {
     display: flex;
-    gap: 3rem;
-    animation: scroll 40s linear infinite;
+    gap: 2rem;
+    animation: scroll 18s linear infinite;
   }
 
   .logo-container {
     display: flex;
     justify-content: center;
     align-items: center;
-    min-width: 150px;
+    min-width: 130px;
   }
 
   @keyframes scroll {
@@ -180,7 +226,5 @@
   }
 
   /* Pausar animación al pasar el ratón por encima */
-  .animate-scroll:hover {
-    animation-play-state: paused;
-  }
+ 
 </style>
